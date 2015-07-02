@@ -1,0 +1,23 @@
+{
+  "name": "kurea-contrib-mood",
+  "version": "0.0.0",
+  "description": "a mood analyzer",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kellyirc/kurea-contrib-mood.git"
+  },
+  "author": "Kyle Kemp <kyle@seiyria.com> (http://seiyria.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kellyirc/kurea-contrib-mood/issues"
+  },
+  "dependencies": {
+    "irc-colors": "^1.1.0",
+    "Sentimental": "*",
+    "lodash": "~3.9.3"
+  }
+}
