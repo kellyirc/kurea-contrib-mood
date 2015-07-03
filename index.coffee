@@ -60,6 +60,7 @@ module.exports = (Module) ->
                     server: bot.getServer()
                     key: user
                 , (e, doc) =>
+                    return unless doc?[0]?.mood
                     @reply origin, "#{user}, I think you are #{color.bold @getTagForScore doc[0].mood}."
     
             @addRoute "mood", (origin, route) =>
@@ -68,6 +69,7 @@ module.exports = (Module) ->
                     server: bot.getServer()
                     key: channel
                 , (e, doc) =>
+                    return unless doc?[0]?.mood
                     @reply origin, "#{user}, I think #{channel} is #{color.bold @getTagForScore doc[0].mood}."
 
             @on 'message', (bot, sender, channel, message) =>
